@@ -1,4 +1,4 @@
-# MyReads Project
+# Would You Rather..? Project
 
 ## Description
 WouldYouRather..?: In this project, a user will be able to play the “Would You Rather?” game. This game is about that a user is asked a question and he/she has two options to choose from.
