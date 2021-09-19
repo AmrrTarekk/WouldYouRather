@@ -1,0 +1,419 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #252525;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.nav li:first-child {
+  padding-left: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+.question {
+  width: 100%;
+  max-width: 590px;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.question-info {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hacky but less typing in the video */
+.question-info > div > span:first-child {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.question-info > div > span:nth-child(2) {
+  color: #969696;
+  font-size: 16px;
+}
+.question-info > div > div {
+  color: #969696;
+  font-size: 15px;
+}
+.question-info > div > p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.question-icons {
+  display: flex;
+  align-items: center;
+}
+.question-icons > span {
+  color: #969696;
+  margin: 0 15px 0 5px;
+  font-size: 18px !important;
+}
+.question-icon {
+  font-size: 27px;
+  color: #697784;
+}
+.question-icon:hover {
+  color: #00b5d6;
+  cursor: pointer;
+}
+
+
+.circle {
+  width: 70px;
+  height: 70px;
+  line-height: 65px;
+  border-radius: 100%;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background: #3B5998;
+}
+
+.circle-header {
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3B5998;
+  position : relative;
+  text-align: center;
+}
+
+.fontstyle { 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fontstyle1 { 
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 100%;
+  height: 60px;
+  width: 70px;
+}
+
+
+.button2 {
+  background-color: rgb(202, 197, 197); 
+  color: #008CBA; 
+  border: 2px solid rgb(202, 197, 197);
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.fonterror { 
+  text-align: center;
+  font-size: 100px;
+  color: white ;
+  background-color: darkcyan;
+  font-weight: bold;
+}
+
+
+.leaderboard {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #008CBA ;
+  background-color: white;
+
+}
+
+.or {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #008CBA ;
+  background-color: white;
+}
+
+
+.timestamp{
+  text-align:end;
+  color: #3B5998;
+  font-weight: lighter;
+
+}
+
+.answers {
+  text-align: center;
+  font-weight: bold;
+  color:darkgreen;
+}
+
+.votes {
+  text-align: end;
+  font-weight: bold;
+  color:darkgreen;
+
+}
+
+.warn{
+  color:#3B5998; 
+}
+
+.logg {
+  width: 100%;
+  max-width: 590px;
+  padding: 50px;
+  position: absolute;
+  margin:auto;
+  border: 10px solid #dad7d7;
+  border-radius: 3px;
+  cursor: pointer;
+  top:30px;
+  
+}
+
+.icon {
+  background-color: #008CBA; 
+  text-align: center;
+  line-height: 50px;
+
+  font-size: 16px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 100%;
+  height: 60px;
+  width: 85px;
+
+}
+
+
+
+
+
+/* -------------------------------------------FOOTER STYLE----------------------------------------- */
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
